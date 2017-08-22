@@ -1,5 +1,5 @@
 <?php
-namespace szaboolcs\recaptcha;
+namespace pctux\recaptcha;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget;

@@ -1,16 +1,16 @@
 # Google Invisible reCaptcha for Yii2
-Based on reCaptcha API 2.0.
+Based on reCaptcha API 2.0. Fork of [szaboolcs/yii2-invisible-recaptcha](https://github.com/szaboolcs/yii2-invisible-recaptcha).
 
 ### Installation
 The preferred way to install this extension is through composer.
 
 - Either run
 
-`php composer.phar require --prefer-dist "szaboolcs/yii2-invisible-recaptcha" "*"`
+`php composer.phar require --prefer-dist "pctux/yii2-invisible-recaptcha" "*"`
 
 or add
 
-`"szaboolcs/yii2-invisible-recaptcha" : "*"`
+`"pctux/yii2-invisible-recaptcha" : "*"`
 
 to the require section of your application's composer.json file.
 
@@ -21,7 +21,7 @@ to the require section of your application's composer.json file.
 'components' =>  [
   'captcha' => [
     'name'    => 'captcha',
-    'class'   => 'szaboolcs\InvisibleRecaptcha',
+    'class'   => 'pctux\InvisibleRecaptcha',
     'siteKey' => 'your siteKey',
     'secret'  => 'your secret'
   ]
@@ -33,7 +33,7 @@ login.php
 
 ```
 <?php
-use szaboolcs\recaptcha\InvisibleRecaptcha;
+use pctux\recaptcha\InvisibleRecaptcha;
 use yii\widgets\ActiveForm;
 
 $form = ActiveForm::begin([
@@ -54,7 +54,7 @@ LoginController.php
 <?php
 namespace app\controllers;
 
-use szaboolcs\recaptcha\InvisibleRecaptchaValidator;
+use pctux\recaptcha\InvisibleRecaptchaValidator;
 use app\models\Login;
 use Yii;
 
