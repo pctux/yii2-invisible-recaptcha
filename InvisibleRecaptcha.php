@@ -40,7 +40,7 @@ class InvisibleRecaptcha extends Widget
 	/**
 	* @var string Recaptcha badge position
 	*/
-	public $badgePosition = 'inline';
+	public $badgePosition = 'bottomright';
 	
 	/**
 	 * @var string   The form selector what in use the recaptcha.
